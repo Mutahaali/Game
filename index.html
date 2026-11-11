@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON RUSH - Survival Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <header>
+            <div class="logo">
+                <span>NEON</span> RUSH
+            </div>
+
+            <div class="header-info">
+                <div class="score-box">
+                    <small>HIGH SCORE</small>
+                    <h2 id="highScore">0</h2>
+                </div>
+
+                <button id="soundBtn">🔊</button>
+            </div>
+        </header>
+
+        <main class="game-area">
+
+            <div class="game-heading">
+                <h1>ENTER THE <span>NEON WORLD</span></h1>
+                <p>Dodge obstacles. Collect diamonds. Survive!</p>
+            </div>
+
+            <div class="game-stats">
+                <div>
+                    <small>SCORE</small>
+                    <h2 id="score">0000</h2>
+                </div>
+
+                <div>
+                    <small>DIAMONDS</small>
+                    <h2 id="diamonds">💎 0</h2>
+                </div>
+
+                <div>
+                    <small>LEVEL</small>
+                    <h2 id="level">01</h2>
+                </div>
+            </div>
+
+            <div class="canvas-wrapper">
+
+                <canvas id="gameCanvas"></canvas>
+
+                <div class="overlay" id="startScreen">
+                    <div class="overlay-content">
+                        <div class="game-icon">🚀</div>
+                        <h1>NEON <span>RUSH</span></h1>
+                        <p>Are you ready to survive?</p>
+                        <button id="startBtn">START GAME →</button>
+                        <small>Use ← → arrow keys to move</small>
+                    </div>
+                </div>
+
+                <div class="overlay hidden" id="gameOverScreen">
+                    <div class="overlay-content">
+                        <div class="game-icon">💥</div>
+                        <h1>GAME <span>OVER</span></h1>
+                        <p>Your adventure has ended!</p>
+
+                        <div class="final-score">
+                            <small>YOUR FINAL SCORE</small>
+                            <h2 id="finalScore">0</h2>
+                        </div>
+
+                        <button id="restartBtn">PLAY AGAIN ↻</button>
+                    </div>
+                </div>
+
+                <div class="overlay hidden" id="pauseScreen">
+                    <div class="overlay-content">
+                        <div class="game-icon">⏸️</div>
+                        <h1>GAME <span>PAUSED</span></h1>
+                        <p>Take a little break!</p>
+                        <button id="resumeBtn">RESUME GAME ▶</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="game-controls">
+
+                <button id="leftBtn">◀</button>
+
+                <div class="control-text">
+                    <span>MOVE LEFT / RIGHT</span>
+                    <small>Collect diamonds and avoid obstacles</small>
+                </div>
+
+                <button id="rightBtn">▶</button>
+
+            </div>
+
+            <div class="bottom-controls">
+                <button id="pauseBtn">⏸ PAUSE</button>
+                <span>POWERED BY YOUR IMAGINATION ✨</span>
+            </div>
+
+        </main>
+
+        <footer>
+            © 2026 NEON RUSH | CREATED WITH HTML, CSS & JAVASCRIPT
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
